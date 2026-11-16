@@ -34,7 +34,9 @@ footer a { margin-right: 16px; }
 .download:hover { background: var(--accent); }
 .small { color: var(--muted); font-size: 15px; margin-top: 4px; }
 video { width: 100%; border-radius: 16px; background: #000; display: block; }
-.shots { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
-.shots img { width: 100%; border-radius: 12px; display: block; }
-.phones { grid-template-columns: repeat(3, 1fr); }
+.strip { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; margin: 12px 0; padding-bottom: 8px; -webkit-overflow-scrolling: touch; }
+.strip a { flex: 0 0 auto; scroll-snap-align: start; }
+.strip img { display: block; border-radius: 10px; width: auto; }
+.strip.wide img { height: 132px; }
+.strip.phones img { height: 196px; border-radius: 12px; }
 .facts li { margin: 4px 0; }
